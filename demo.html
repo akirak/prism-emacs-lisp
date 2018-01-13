@@ -16,6 +16,11 @@
     "Why did you insist on calling on him?"
     (let ((f (lambda () (error "Please don't call on me!"))))
        (funcall f)))
+
+(defun my-function2 (a)
+    (let* ((x y)
+           (z x))
+      (concat x z)))
        </code></pre>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.9.0/prism.min.js"></script>
        <script src="dist/prism-emacs.min.js"></script>

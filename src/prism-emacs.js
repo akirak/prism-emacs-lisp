@@ -49,7 +49,7 @@ Prism.languages.emacs = (function () {
         },
         'keyword': [
             {
-                pattern: new RegExp(par + "(?:(?:lexical-)?let\*?|(?:cl-)?letf|if|when|while|unless|cons|cl-loop|and|or|not|cond|setq|error|message|null|require|provide|use-package)" + space),
+                pattern: new RegExp(par + "(?:(?:lexical-)?let\\*?|(?:cl-)?letf|if|when|while|unless|cons|cl-loop|and|or|not|cond|setq|error|message|null|require|provide|use-package)" + space),
                 lookbehind: true
             },
             {
