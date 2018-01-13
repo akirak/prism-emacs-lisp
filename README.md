@@ -17,8 +17,6 @@ Download the following scripts:
 - [Emacs Lisp support for Prism.js (minified)](https://raw.githubusercontent.com/akirak/prism-emacs-lisp/master/dist/prism-emacs.min.js)
 - [Dracula theme for Prism.js (minified)](https://raw.githubusercontent.com/akirak/prism-emacs-lisp/master/dist/prism-dracula.min.css)
 
-To use the Dracula theme, 
-
 ## Usage
 
 To highlight code written in Emacs Lisp, you have to add `language-emacs` class to each `code`/`pre` tag. 
