@@ -192,6 +192,12 @@ pre[class*="language-"] {
         color: $dracula-purple;
     }
 
+    &.interactive,
+    &.declare {
+        color: $dracula-purple;
+        font-weight: normal;
+    }
+
     &.argument {
         color: $dracula-orange;
     }
