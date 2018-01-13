@@ -86,7 +86,7 @@ Prism.languages.emacs = (function () {
             }
         },
         'defun': {
-            pattern: new RegExp(par + `(?:cl-)?(?:defun\\*?|defmacro)\\s+${symbol}\\s+\\([\\s\\S]+\\)`),
+            pattern: new RegExp(par + `(?:cl-)?(?:defun\\*?|defmacro)\\s+${symbol}\\s+\\([\\s\\S]*\\)`),
             lookbehind: true,
             inside: {
                 'keyword': /(?:cl-)?def\S+/,
@@ -148,7 +148,7 @@ Prism.languages.emacs = (function () {
     const forms = "\\S+(?:\\s+\\S+)*";
 
     const arglist = {
-        pattern: new RegExp(par + "[\\s\\S]+" + endpar),
+        pattern: new RegExp(par + "[\\s\\S]*" + endpar),
         lookbehind: true,
         inside: {
             'rest-vars': {
