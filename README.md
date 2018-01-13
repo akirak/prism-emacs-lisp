@@ -1,6 +1,6 @@
 # Emacs Lisp Support for Prism.js
 
-This repository contains the following things for 
+This repository contains the following things:
 
 - Emacs Lisp language support for [Prism.js](http://prismjs.com/)
 - [Dracula](https://draculatheme.com/) theme for Prism.js focusing on highlighting of the language
