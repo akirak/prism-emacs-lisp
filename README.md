@@ -5,6 +5,11 @@ This repository contains the following things for
 - Emacs Lisp language support for [Prism.js](http://prismjs.com/)
 - [Dracula](https://draculatheme.com/) theme for Prism.js focusing on highlighting of the language
 
+## Screenshots
+
+![dash-functional](https://github.com/akirak/prism-emacs-lisp/blob/master/screenshots/dash-functional.png?raw=true)
+![ghub](https://github.com/akirak/prism-emacs-lisp/blob/master/screenshots/ghub.png?raw=true)
+
 ## Installation
 
 Download the following scripts:
