@@ -1,0 +1,29 @@
+{
+  "name": "prism-emacs-lisp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run js && npm run css",
+    "js": "babel --presets env src/prism-emacs.js | uglifyjs -o dist/prism-emacs.min.js",
+    "css": "postcss src/prism-dracula.css -o dist/prism-dracula.min.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akira Komamura",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.16",
+    "postcss-cli": "^4.1.1",
+    "postcss-import": "^11.0.0",
+    "postcss-sass": "^0.2.0",
+    "postcss-scss": "^1.0.3",
+    "precss": "^2.0.0",
+    "uglify-js": "^3.3.5"
+  }
+}

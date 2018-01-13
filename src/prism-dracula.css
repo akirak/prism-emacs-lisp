@@ -1,0 +1,199 @@
+$dracula-background: #282a36;
+$dracula-selection:  #44475a;
+$dracula-foreground: #f8f8f2;
+$dracula-comment:    #6272a4;
+$dracula-cyan:       #8be9fd;
+$dracula-green:      #50fa7b;
+$dracula-orange:     #ffb86c;
+$dracula-pink:       #ff79c6;
+$dracula-purple:     #bd93f9;
+$dracula-red:        #ff5555;
+$dracula-yellow:     #f1fa8c;
+$dracula-fg2:        #e2e2dc;
+$dracula-fg3:        #ccccc7;
+$dracula-fg4:        #b6b6b2;
+
+code[class*="language-"],
+pre[class*="language-"] {
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+
+  tab-size: 4;
+
+  hyphens: none;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+
+  background: $dracula-background;
+  color: $dracula-foreground;
+}
+
+[class*="language-"] .token {
+
+    &.shebang,
+    &.comment {
+        color: $dracula-comment;
+    }
+
+    &.keyword,
+    &.operator {
+        color: $dracula-pink;
+    }
+    &.keyword {
+        font-weight: bold;
+    }
+
+    &.number,
+    &.boolean {
+        color: $dracula-purple;
+    }
+
+    &.class-name
+    {
+    }
+
+    &.punctuation {
+        color: $dracula-fg4;
+    }
+    &.string {
+        color: $dracula-yellow;
+    }
+    $dracula-string: $dracula-yellow;
+
+    &.regex
+    {
+        color: $dracula-cyan;
+    }
+
+    &.function {
+        color: $dracula-cyan;
+        font-weight: bold;
+    }
+
+    /* javascript https://github.com/PrismJS/prism/blob/gh-pages/components/prism-javascript.js */
+    &.function-variable {
+        color: $dracula-green;
+    }
+    &.template-string {
+    }
+    /* <script>...</script> in markup languages */
+    &.script {
+    }
+
+    /* CSS https://github.com/PrismJS/prism/blob/gh-pages/components/prism-css.js */
+    &.atrule {
+        color: $dracula-orange;
+    }
+    &.url {
+        color: $dracula-string;
+    }
+    &.property {
+        color: $dracula-purple;
+    }
+    &.selector {
+        color: $dracula-green;
+        font-weight: bold;
+    }
+    &.important {
+        color: $dracula-red;
+    }
+
+    /* css-extras https://github.com/PrismJS/prism/blob/gh-pages/components/prism-css-extras.js */
+    /*
+    &.pseudo-element {}
+    &.pseudo-class {}
+    &.id {}
+    &.class {}
+    &.attribute {}
+    &.hexcode {}
+    &.entity {}
+    &.number {}
+   */
+
+    &.doctype,
+    &.prolog {
+        color: $dracula-comment;
+    }
+    &.cdata {}
+    &.tag {
+        color: $dracula-pink;
+        font-weight: bold;
+        background-color: $dracula-background;
+    }
+    &.tag > :not(.tag) {
+        font-weight: normal;
+    }
+    &.attr-name {
+        color: $dracula-purple;
+    }
+    &.attr-value {
+        color: $dracula-yellow;
+    }
+    &.entity {
+        cursor: help;
+    }
+
+    /* haskell https://github.com/PrismJS/prism/blob/gh-pages/components/prism-haskell.js */
+    &.char {
+    }
+    &.hvariable {
+    }
+    &.constant {
+    }
+    &.import_statement {
+        color: $dracula-pink;
+        font-weight: bold;
+    }
+
+    /* python */
+    &.triple-quoted-string {
+    }
+
+    /* yaml */
+    &.directive {
+    }
+
+    &.key {
+    }
+
+    &.scalar {
+    }
+
+    &.datetime {
+    }
+
+    &.null {
+    }
+
+    /* emacs lisp */
+    &.defvar + *,
+    &.defvar + .punctuation + .punctuation,
+    &.defvar + .punctuation + * + .punctuation,
+    &.defvar + .punctuation + * + * + .punctuation,
+    &.defun
+    {
+        & + .string {
+            color: $dracula-comment;
+            & > .argument {
+                color: $dracula-purple 
+            }
+            & > .symbol {
+                color: $dracula-cyan;
+            }
+        }
+    }
+
+    &.lisp-property,
+    &.lisp-marker {
+        color: $dracula-purple;
+    }
+
+    &.argument {
+        color: $dracula-orange;
+    }
+
+}
