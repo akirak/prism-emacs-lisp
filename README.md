@@ -1,5 +1,7 @@
 # Emacs Lisp Support for Prism.js
 
+**Deprecation notice**: This implementation is poor, and a better work is being done at the repository of Prism.js. Please refer to [this thread](https://github.com/PrismJS/prism/pull/1297).
+
 This repository contains the following things:
 
 - Emacs Lisp language support for [Prism.js](http://prismjs.com/)
